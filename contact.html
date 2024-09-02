@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Café des Amis</title>
+    <meta name="description" content="C'est le site du Café des Amis, un bistrot sympa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Café, Amis, Bistrot">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="menu.html">Le Menu</a>
+            <a class="active_page" href="contact.html">Contact</a>
+            <a href="horaires.html">Horaires</a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="rendered-form">
+            <div class="formbuilder-text form-group field-nom">
+                <label for="nom" class="formbuilder-text-label">Nom</label>
+                <input type="text" placeholder="Votre nom" class="form-control" name="nom" id="nom" title="Votre nom"
+                    required>
+            </div>
+            <div class="formbuilder-date form-group field-date">
+                <label for="date" class="formbuilder-date-label">Date de réservation</label>
+                <input type="date" class="form-contact" name="date" id="date" title="Date de réservation" required>
+            </div>
+            <div class="formbuilder-radio-group form-group field-service">
+                <label class="formbuilder-radio-group-label">Service</label>
+                <div class="radio-group">
+                    <div class="formbuilder-radio">
+                        <input class="form-contact" name="service" id="service-0" required value="option-matin"
+                            type="radio">
+                        <label for="service-0">Matin</label>
+                    </div>
+                    <div class="formbuilder-radio">
+                        <input class="form-contact" name="service" id="service-1" required value="option-midi"
+                            type="radio">
+                        <label for="service-1">Midi</label>
+                    </div>
+                    <div class="formbuilder-radio">
+                        <input class="form-contact" name="service" id="service-2" required value="option-soir"
+                            type="radio">
+                        <label for="service-2">Soir</label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbuilder-number form-group field-nb_personnes">
+                <label for="nb_personnes" class="formbuilder-number-label">Nombre de personnes<span
+                        class="tooltip-element">?</span></label>
+                <input type="number" placeholder="Nombre de personnes" class="form-contact" name="nb_personnes"
+                    value="1" min="1" id="nb_personnes" title="Nombre de personnes" required>
+            </div>
+            <div class="formbuilder-button form-group field-button-1720017060991">
+                <button type="submit" class="btn-default btn" name="button-contact" id="button-contact">Valider</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <!-- Facebook -->
+            <a href="" target="_blank" title="Facebook" rel="nofollow">
+                <img src="icons/facebook_icon.png" alt="Facebook">
+            </a>
+            <!-- //Facebook -->
+
+            <!-- Twitter -->
+            <a href="" target="_blank" title="Twitter" rel="nofollow">
+                <img src="icons/twitter_icon.png" alt="Twitter">
+            </a>
+            <!-- //Twitter -->
+
+            <!-- Instagram -->
+            <a href="" target="_blank" title="Instagram" rel="nofollow">
+                <img src="icons/instagram_icon.png" alt="Twitter">
+            </a>
+            <!-- //Instagram -->
+
+            <!-- Google + -->
+            <a href="" target="_blank" title="Google +" rel="nofollow">
+                <img src="icons/gplus_icon.png" alt="Google Plus">
+            </a>
+            <!-- //Google + -->
+
+            <!-- Linkedin -->
+            <a href="" target="_blank" title="Linkedin" rel="nofollow">
+                <img src="icons/linkedin_icon.png" alt="Linkedin">
+            </a>
+            <!-- //Linkedin -->
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --distance : 30px;
+            --mytop :0;
+        }
+
+        .drapeau {
+            width: 500px;
+            height: 300px;
+            background-color: dodgerblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ue {
+            font-size: 60px;
+            /* animation: mymove 5s infinite; */
+            color: white;
+        }
+
+        .five-point-star {
+            background-image: url("assets/star.svg");
+            width: 40px;
+            height: 40px;
+            line-height: 200px;
+            border-radius: 50%;
+            /* position: absolute; */
+
+            animation: spin 10s linear infinite reverse;
+        }
+
+        .rleft {
+            animation: rotating-left 0.75s linear infinite;
+        }
+
+        .rright {
+            animation: rotating-right 1s linear infinite;
+        }
+
+        #container {
+            width: 240px;
+            height: 240px;
+            place-content: center;
+            animation: rotating-right 3s linear infinite;
+            position: relative;
+        }
+
+        .zero {
+            top: 0;
+            right: 0;
+        }
+
+        .one {
+            top: calc(var(--distance)*1);
+            right: 0;
+        }
+
+        .two {
+            top: calc(var(--distance)*2);
+            right: 0;
+        }
+
+        .three {
+            top: calc(var(--distance)*3);
+            right: 0;
+        }
+
+        .four {
+            top: calc(var(--distance)*4);
+            right: 0;
+        }
+
+        .five {
+            top: calc(var(--distance)*5);
+            right: 0;
+        }
+
+        .six {
+            top: calc(var(--distance)*6);
+            right: 0px;
+        }
+        
+        .seven {
+            top: calc(var(--distance)*7);
+            right: 0;
+        }
+
+        .eight {
+            top: calc(var(--distance)*8);
+            right: 0;
+        }
+
+        .nine {
+            top: calc(var(--distance)*9);
+            right: 0;
+        }
+
+        .ten {
+            top: calc(var(--distance)*10);
+            right: 0;
+        }
+
+        .eleven {
+            top: calc(var(--distance)*11);
+            right: 0;
+        }
+
+        .twelve {
+            top: calc(var(--distance)*12);
+            right: 0px;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(1turn) translate(100px) rotate(-1turn);
+            }
+        }
+
+        @keyframes rotating-left {
+            from {
+                transform: rotate(360deg);
+            }
+
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes rotating-right {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="drapeau">
+        <div id="container">
+            <div class="five-point-star rleft zero"></div>
+            <div class="five-point-star rright one"></div>
+            <div class="five-point-star rleft two"></div>
+            <div class="five-point-star rright three"></div>
+            <div class="five-point-star rleft four"></div>
+            <div class="five-point-star rright five"></div>
+            <div class="five-point-star rleft six"></div>
+            <div class="five-point-star rright seven"></div>
+            <div class="five-point-star rleft eight"></div>
+            <div class="five-point-star rright nine"></div>
+            <div class="five-point-star rleft ten"></div>
+            <div class="five-point-star rright eleven"></div>
+        </div>
+    </div>
+</body>
+
+</html>

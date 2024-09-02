@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Card</title>
+    <style>
+        .img-alf img {
+            border-radius: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+        .textual {
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+        }
+
+        .textual>span:nth-child(1) {
+            font-size: xx-large;
+            padding: 20px;
+        }
+
+        .textual>span:nth-child(2) {
+            padding: 20px;
+        }
+
+        .button-alf {
+            border-radius: 10px;
+            background-color: rgb(56, 224, 146);
+        }
+
+        .container div:last-of-type {
+            top:10px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-alf">
+            <img src="https://images.rtl.fr/~c/770v513/rtl/www/1316105-l-extraterrestre-de-la-serie-alf.jpg"
+                width="350px" alt="" Alf />
+        </div>
+        <div class="textual">
+            <span>J'aime bien les chats ?</span>
+            <span>Vivant ou pas, je m'en charge.<br />Vive les brochettes<br />
+                Envoyez moi votre adresse mail. Je suis preneur.</span>
+        </div>
+        <div>
+            <input type="text" placeholder="Envoyez moi aussi la taille du chat">
+            <button type="submit" class="button-alf">Adresse</button>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
